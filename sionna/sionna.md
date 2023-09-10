@@ -8,12 +8,12 @@ Sionna ™ は、無線および光通信システムの物理層をシミュレ
 # Sionnaの特徴
 Sionna は、NVIDIA によって開発され、5G および 6G 研究を推進するために使用されている。低密度パリティチェック(LDPC)[^1]およびPolar en/decoders[^2]、3GPP channel models[^3]、OFDM(orthogonal frequency-division multiplexing:直交周波数分割多重化)[^4]、チャネル推定[^5]、およびソフトデマッピング[^6]が例として挙げられます。すべての構成要素は独立したモジュールであり、ニーズに応じて簡単にテスト、変更できる。
 
-[^1]: https://en.wikipedia.org/wiki/Low-density_parity-check_code
-[^2]: https://en.wikipedia.org/wiki/Polar_code_(coding_theory)
-[^3]: https://www.3gpp.org/ftp/Specs/archive/36_series/36.101/
-[^4]: https://en.wikipedia.org/wiki/Orthogonal_frequency-division_multiplexing
-[^5]: https://en.wikipedia.org/wiki/Channel_state_information
-[^6]: https://en.wikipedia.org/wiki/Soft_output_Viterbi_algorithm
+[^1]: https://ja.wikipedia.org/wiki/低密度パリティ検査符号
+[^2]:　線形ブロック誤り訂正コード　https://en.wikipedia.org/wiki/Polar_code_(coding_theory)
+[^3]: 3GPPチャネルモデルは、無線通信中に信号が伝送される際の伝送経路や環境をモデル化し、無線通信システムの性能を予測するために使用されます。これには、伝送損失、多重経路伝送、遅延拡散、フェージング、雑音など、さまざまな要因が含まれます。
+[^4]: https://ja.wikipedia.org/wiki/直交周波数分割多重化
+[^5]: チャネル推定（Channel Estimation）は、通信システムにおいて、伝送路（チャネル）の性質や特性を推定するプロセスです。通信路は信号が送信者から受信者まで伝播する経路であり、この経路はノイズ、干渉、多重経路伝送などの要因によって信号に影響を与えます。
+[^6]: デジタル通信システムで使用される信号処理の手法の一つです。主に誤り訂正符号の復号（デコーディング）に関連しており、受信した信号を元のデータビットに戻すために使用されます。
 
 # Sionnaの利点
 通信分野のほとんどの研究者は、プロトタイプを迅速に作成し、最先端のアルゴリズムと比較してアルゴリズムのベンチマークを得るために、リンクレベルのシミュレーション用のツールを必要としている。しかし、独自のソフトウェアを除けば、広く使用されている共通のオープンソース ツールは存在していなかった。さらに、チャネル推定などの1つの分野の専門家は、現実的なチャネル モデルでの符号化ビット誤り率 (BER) など、End-to-Endのパフォーマンスに関するアルゴリズムを評価するための時間持っているわけではない。
